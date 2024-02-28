@@ -14,12 +14,10 @@ use App\Http\Controllers\HomeController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-
-
-
-
-
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::controller(LoginController::class)->group(function(){
+    Route::get("/loginView", "loginView")->name("loginView");
 });
