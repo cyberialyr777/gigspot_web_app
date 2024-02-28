@@ -1,0 +1,49 @@
+.navbar{
+    background-color: #3B3486 !important;
+    color:azure !important;
+}
+
+.div.container-fluid{
+    background-color: #3B3486 !important;
+    color:azure !important;
+}
+
+.carousel-item img {
+    max-height: 400px; /* Ajusta la altura máxima de la imagen */
+    width: auto; /* Ajusta el ancho automáticamente */
+  }
+
+.text-recent-concerts{
+    margin-top: 5%;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.container-fluid.cards{
+    margin-bottom: 5%;
+}
+
+.card.col-sm-4.derecha{
+    margin-right: 3%;
+}
+
+.nav-link{
+    color:#f0ffff !important;
+}
+
+.nav-item.sign-in{
+    margin-left: 670px;
+}
+
+.col-sm-6.anuncio1{
+    background-color: thistle;
+    height: 230px;
+    margin-bottom: 5%;
+}
+
+.col-sm-6.anuncio2{
+    background-color:aquamarine;
+    height: 230px;
+    margin-bottom: 5%;
+}
+

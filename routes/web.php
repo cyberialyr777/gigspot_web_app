@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::controller(LoginController::class)->group(function(){
-    Route::get("/loginView", "loginView");
+
+
+
+
+
+Route::get('/', function () {
+    return view('welcome');
 });
