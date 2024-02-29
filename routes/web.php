@@ -19,4 +19,7 @@ Route::get("/home", [HomeController::class , "index"]);
 
 Route::controller(LoginController::class)->group(function(){
     Route::get("/loginView", "loginView")->name("loginView");
+    Route::get("/registerUserView", "registerUserView");
+    Route::get("/registerBandView", "registerBandView");
+    Route::get("/registerSclectionView", "registerSclectionView");
 });

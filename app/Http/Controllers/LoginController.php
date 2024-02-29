@@ -10,4 +10,16 @@ class LoginController extends Controller
     function loginView(){
         return view("login");
     }
+
+    function registerUserView(){
+        return view("registerUser");
+    }
+
+    function registerBandView(){
+        return view("registerBand");
+    }
+
+    function registerSclectionView(){
+        return view("registerSelectionUB");
+    }
 }

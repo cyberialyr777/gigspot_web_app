@@ -43,6 +43,8 @@
 
         <button class="rounded-button" type="submit">Iniciar sesión</button>
       </form>
+      <br>
+      <p class="text">no tienes una cuenta? <a href="registerSclectionView">registrate</a></p>
     </div>
   </div>
 
