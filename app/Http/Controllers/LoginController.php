@@ -24,6 +24,6 @@ class LoginController extends Controller
     }
 
     function infoConcert(){
-        return view("infoConcerts");
+        return view("infoConcerts", ["titulo" => "Info Concert"]);
     }
 }
