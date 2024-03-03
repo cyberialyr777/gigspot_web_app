@@ -10,7 +10,6 @@
 
   <div class="container">
     <div class="image-container">
-      <img src="img/purple.jpg" alt="Imagen de fondo">
     </div>
     
     <div class="form-container-button">

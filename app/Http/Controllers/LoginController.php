@@ -22,4 +22,8 @@ class LoginController extends Controller
     function registerSclectionView(){
         return view("registerSelectionUB");
     }
+
+    function infoConcert(){
+        return view("infoConcerts");
+    }
 }

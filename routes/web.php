@@ -22,4 +22,5 @@ Route::controller(LoginController::class)->group(function(){
     Route::get("/registerUserView", "registerUserView");
     Route::get("/registerBandView", "registerBandView");
     Route::get("/registerSclectionView", "registerSclectionView");
+    Route::get("/infoConcert", "infoConcert");
 });

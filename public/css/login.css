@@ -1,9 +1,12 @@
 body {
-    display: flex;
-    height: 100vh;
-    margin: 0;
-    overflow-y: hidden;
-  }
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  overflow-y: hidden;
+  background-image: url('/img/GigSpot.png');
+  background-size: cover;
+  background-position: center;
+}
 
   .container {
     display: flex;
