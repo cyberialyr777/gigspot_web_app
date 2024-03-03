@@ -8,19 +8,19 @@ use Illuminate\Http\Request;
 class LoginController extends Controller
 {
     function loginView(){
-        return view("login");
+        return view("login", ["titulo" => "Login"]);
     }
 
     function registerUserView(){
-        return view("registerUser");
+        return view("registerUser", ["titulo" => "User register"]);
     }
 
     function registerBandView(){
-        return view("registerBand");
+        return view("registerBand", ["titulo" => "Band register"]);
     }
 
     function registerSclectionView(){
-        return view("registerSelectionUB");
+        return view("registerSelectionUB", ["titulo" => "User seleccion"]);
     }
 
     function infoConcert(){
