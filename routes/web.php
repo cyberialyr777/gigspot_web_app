@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\EventsController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -15,7 +16,9 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get("/home", [HomeController::class , "index"]);
+Route::get("/", [HomeController::class , "index"]);
+
+Route::get("/events", [EventsController::class , "eventos"]);
 
 Route::controller(LoginController::class)->group(function(){
     Route::get("/loginView", "loginView")->name("loginView");
