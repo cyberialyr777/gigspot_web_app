@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Information</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concert Information</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <header>
@@ -69,72 +68,92 @@
           
         </div>
       </div>
-      </nav>
+    </nav>
 
 
 <body>
 <div class="container mt-4 jutify" style="width: 80%;">
-    <div class="d-flex justify-content-between">
+    <div class="d-flex justify-content-evenly">
         <!-- Product Image on the left side -->
-        <div class="card col-md-5">
+        <div class="col-md-4">
             <img src="{{asset('img/concert1.jpg')}}" class="img-fluid rounded" alt="Product Image">
         </div>
         <!-- Product Information on the right side -->
         <div class="col-md-5">
-            <h2 class="d-flex justify-content-center">Product Name</h2>
+            <h2 class="d-flex justify-content-center fw-bold">Nirvana Concert</h2>
+            <br>
             <ul class="list-unstyled">
-                <li><strong><i class="bi bi-geo-alt-fill"></i></strong> Product Location</li>
+                <li class="fs-5"><strong><i class="bi bi-geo-alt-fill"></i></strong> Product Location</li>
                 <br>
-                <li><strong><i class="bi bi-calendar"></i></strong> Product Date</li>
+                <li class="fs-5"><strong><i class="bi bi-calendar"></i></strong> Product Date</li>
                 <br>
-                <li><strong><i class="bi bi-clock-fill"></i></strong> Product Time</li>
+                <li class="fs-5"><strong><i class="bi bi-clock-fill"></i></strong> Product Time</li>
                 <br>
-                <li><strong><i class="bi bi-currency-dollar"></i></strong> 100.00</li>
+                <li class="fs-5"><strong><i class="bi bi-currency-dollar"></i></strong> 100.00</li>
             </ul>
-            <a href="#" class="btn btn-primary">Buy Now</a>
         </div>
     </div>
-</div>
 
-<div class="container jutify" style="width: 80%;">
-  <div class="d-flex">
-    <div class="card">
-      <div class="card-body">
-        Nirvana
-        <a href="#" class="btn btn-primary">Buy Now</a>
+    <br>
+
+    <div class="container jutify" style="width: 85%;">
+      <div class="d-flex justify-content-between">
+        <div class="" style="width: 40%;">
+          <div class="d-flex justify-content-between">
+            <div class="card-body">
+              <p>  Nirvana</p>
+            </div>
+            <button class="btn btn-primary">follow</button>
+          </div>
+        </div>
+        <div class="d-flex">
+          <div class="card-body">
+            <a href="#" class="btn btn-primary">Buy Tickets</a>
+            <p></p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="card">
-      <div class="card-body">
-        This is some text within a card body.
-      </div>
-    </div>
-  </div>
 </div>
 
-
-<div class="container mt-4 jutify" style="width: 80%;">
+<div class="container mt-4 jutify" style="width: 70%;">
   <div class="d-flex justify-content-between">
-      <!-- Product Image on the left side -->
-      <div class="card col-md-5">
-          <img src="{{asset('img/concert1.jpg')}}" class="img-fluid rounded" alt="Product Image">
+
+    <div class="" style="width: 40%;">
+      <div class="card-body">
+        <h5 class="card-title">Aboute</h5>
+        <h6 class="card-subtitle mb-2 text-body-secondary fst-italic">Card subtitle</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <a href="#" class="card-link">Another link</a>
       </div>
-      <!-- Product Information on the right side -->
-      <div class="col-md-5">
-          <h2 class="d-flex justify-content-center">Product Name</h2>
+    </div>
+  
+    <div class="" style="width: 50%;">
+      <div class="card-body">
+        <div class="d-flex justify-content-between">
+          <h5 class="card-title">Reviews</h5>
+          <h3 class="card-title"> 4.5<i class="bi bi-stars"></i></h3>
+        </div>
+        <br>
+        <div>
           <ul class="list-unstyled">
-              <li><strong><i class="bi bi-geo-alt-fill"></i></strong> Product Location</li>
-              <br>
-              <li><strong><i class="bi bi-calendar"></i></strong> Product Date</li>
-              <br>
-              <li><strong><i class="bi bi-clock-fill"></i></strong> Product Time</li>
-              <br>
-              <li><strong><i class="bi bi-currency-dollar"></i></strong> 100.00</li>
+            <li class="fs-5"><strong><i class="bi bi-person-check"></i></strong> User Name</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+            <li>Rating: <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></li>
           </ul>
-          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+        <div>
+          <ul class="list-unstyled">
+            <li class="fs-5"><strong><i class="bi bi-person-check"></i></strong> User Name</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+            <li>Rating: <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></li>
+          </ul>
+        </div>
       </div>
+    </div>
   </div>
 </div>
+
 
 <!-- Bootstrap JS and Popper.js -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

@@ -13,8 +13,8 @@
     </div>
     
     <div class="form-container-button">
-      <div class="title">
-        <h1>GigSpot</h1>
+      <div>
+        <h1 class="title">GigSpot</h1>
         <br>
         <div class="text">
           <p>Escoja un tipo de usuario</p> 
