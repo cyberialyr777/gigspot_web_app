@@ -8,10 +8,36 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/home.css') }}">
   </head>
+
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <header>
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{{ asset('img/concierto1.png') }}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{{ asset('img/concierto2.png') }}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{{ asset('img/concierto3.png') }}" class="d-block w-100" alt="...">
+          </div>
+          <button type="button" class="btn btn-carrusel">Buy tickets</button>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand fw-bold" href="#">GigSpot</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -28,62 +54,49 @@
                 <a class="nav-link" href="#">Events
                 </a>
               </li>
-              <li class="nav-item sign-in">
-                <a class="nav-link" href="#">Sign in
-                </a>
-                    
-              </li>
-              <li class="nav-item sign-up">
-                <a class="nav-link" href="#">Sign up
-                </a>
-              </li>
+              
             </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item sign-in">
+              <a class="nav-link sign-in" href="#">Sign in
+              </a>
+                  
+            </li>
+            <li class="nav-item sign-up">
+              <a type="button" class="btn sign-up">Sign up</a>
+              </a>
+            </li>
+          </ul>
             
           </div>
         </div>
       </nav>
 
-      <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://i.pinimg.com/564x/33/d7/67/33d767d764cd48c59753ff5cb54523e1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+      
+
       <div class="text-recent-concerts">
         <h1>Latest Concerts</h1>
       </div>
       <div class="container-fluid cards">
         <div class="row justify-content-center">
             <div class="card col-sm-4 derecha" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="{{ asset('img/imagen1.png') }}" class="card-img-top" alt="...">
                 <div class="card-body">
+                  <h5>Lorem Ipsum</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
               </div>
               <div class="card col-sm-4 derecha" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="{{ asset('img/imagen2.png') }}" class="card-img-top" alt="...">
                 <div class="card-body">
+                  <h5>Morat Concert</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
               </div>
               <div class="card col-sm-4" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="{{ asset('img/imagen3.png') }}" class="card-img-top" alt="...">
                 <div class="card-body">
+                  <h5>Lorem Ipsum</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
               </div>
@@ -93,10 +106,12 @@
       <div class="container">
         <div class="row justify-content-center">
             <div class="col-sm-6 anuncio1">
-                <h1>hola</h1>
+                <h3 class="text-anuncio">Want to go to some cool gigs?</h3>
+                <a class="p-anuncio btn" >Click here</a>
             </div>
             <div class="col-sm-6 anuncio2">
-                <h1>hola</h1>
+                <h3 class="text-anuncio">Tired of playing in your garage?</h3>
+                <h6 class="p-anuncio btn">Sign up</h6>
             </div>
 
         </div>
@@ -142,7 +157,7 @@
     <!-- Section: Social media -->
   
     <!-- Section: Links  -->
-    <section class="">
+    <section class="container foter">
       <div class="container text-center text-md-start mt-5">
         <!-- Grid row -->
         <div class="row mt-3">
@@ -150,10 +165,10 @@
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <!-- Content -->
             <h6 class="text-uppercase fw-bold mb-4">
-              <i class="fas fa-gem me-3"></i>Company name
+              <i class="fas fa-gem me-3"></i>GigSpot
             </h6>
             <p>
-              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              Lorem ipsum
               dolor sit amet, consectetur adipisicing elit.
             </p>
           </div>
@@ -187,13 +202,13 @@
               Useful links
             </h6>
             <p>
-              <a href="#!" class="text-reset">Pricing</a>
+              <a href="#!" class="text-reset">Sign in</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Settings</a>
+              <a href="#!" class="text-reset">Sign up</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Orders</a>
+              <a href="#!" class="text-reset">Buy tickets</a>
             </p>
             <p>
               <a href="#!" class="text-reset">Help</a>
@@ -205,13 +220,13 @@
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+            <p><i class="fas fa-home me-3"></i> Vhsa, Tab 86453, Mexico</p>
             <p>
               <i class="fas fa-envelope me-3"></i>
-              info@example.com
+              gigspot@gmail.com
             </p>
-            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+            <p><i class="fas fa-phone me-3"></i> 01 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> 01 234 567 89</p>
           </div>
           <!-- Grid column -->
         </div>
@@ -222,12 +237,24 @@
   
     <!-- Copyright -->
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-      © 2021 Copyright:
-      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      © 2024 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">GigSpot.com</a>
     </div>
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <script>
+    var nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', function(){
+      if (window.pageYOffset > 100) {
+        nav.classList.add('bg-dark', 'shadow');
+      } else {
+        nav.classList.remove('bg-dark', 'shadow');
+      }
+    });
+  </script>
 </html>

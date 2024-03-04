@@ -19,4 +19,6 @@ Route::get("/home", [HomeController::class , "index"]);
 
 Route::controller(LoginController::class)->group(function(){
     Route::get("/loginView", "loginView")->name("loginView");
+    Route::get("/profile", "profileU")->name("profile");
+    Route::get("/plantilla", "navbar")->name("navbar");
 });
