@@ -3,6 +3,9 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\EventsController;
+use App\Http\Controllers\SeatsController;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -16,19 +19,18 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get("/home", [HomeController::class , "index"]);
+Route::get("/index", [HomeController::class , "index"]);
+
+Route::get("/events", [EventsController::class , "eventos"]);
+
+Route::get("/profile", [ProfileController::class , "profile"]);
+
+Route::get("/seats", [SeatsController::class , "seats"]);
 
 Route::controller(LoginController::class)->group(function(){
     Route::get("/loginView", "loginView")->name("loginView");
+    Route::get("/registerUserView", "registerUserView");
+    Route::get("/registerBandView", "registerBandView");
+    Route::get("/registerSclectionView", "registerSclectionView");
+    Route::get("/infoConcert", "infoConcert");
 });
-
-/*
-|Rutas Luis_Candelario
-*/
-Route::controller(AdminController::class)->group(function(){
-    Route::get("/Admin", "index")->name("index");
-    Route::get("/VerBandas", "index2")->name("index2");
-    Route::get("/VerUsers", "index3") -> name ("index3");
-    Route::get("/AdminSol", "index4") -> name ("index4");
-});
-
