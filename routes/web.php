@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get("/", [HomeController::class , "index"]);
+Route::get("/index", [HomeController::class , "index"]);
 
 Route::get("/events", [EventsController::class , "eventos"]);
 

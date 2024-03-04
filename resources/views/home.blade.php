@@ -58,12 +58,12 @@
             </ul>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item sign-in">
-              <a class="nav-link sign-in" href="#">Sign in
+              <a class="nav-link sign-in" href="loginView">Sign in
               </a>
                   
             </li>
             <li class="nav-item sign-up">
-              <a type="button" class="btn sign-up">Sign up</a>
+              <a type="button" href="registerSclectionView" class="btn sign-up">Sign up</a>
               </a>
             </li>
           </ul>

@@ -7,7 +7,7 @@
     <div class="d-flex justify-content-evenly">
         <!-- Product Image on the left side -->
         <div class="col-md-4">
-            <img src="{{asset('img/concierto1.jpg')}}" class="img-fluid rounded" alt="Band Image">
+            <img src="{{asset('img/img1.png')}}" class="img-fluid rounded" alt="Band Image">
         </div>
         <!-- Product Information on the right side -->
         <div class="col-md-5">

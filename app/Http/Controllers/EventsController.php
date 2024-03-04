@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class EventsController extends Controller
 {
         function eventos() {
-            return view('events');
+            return view('events', ["titulo" => "events"]);
     }
     }
 
