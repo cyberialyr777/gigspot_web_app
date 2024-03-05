@@ -9,7 +9,7 @@
 </header>
 
 
-<body style="background-color: hsl(0, 0%, 95%);">
+<body>
     <div class="contenedor-principal" style="background-color: #ffffffff; width: 100%; max-width: 1200px; margin: 0 auto; padding: 80px; margin-top: 40px; border-radius: 100px;S">
         <div class="icon-button-container" style="margin-top: 0px; margin-bottom: 30px; display: flex; justify-content: flex-start; align-items: flex-start; gap: 150px; padding: 10px; box-sizing: border-box;">
             <span style="font-weight: bold; font-size: 24px;">
@@ -20,7 +20,7 @@
 <!-- Tabla con cuatro columnas usando Bootstrap -->
 <div class="table-responsive">
 <table class="table table-striped table-hover table-bordered" style="margin:  0 auto; ">
-    <thead class="table" style="background-color: #3B3486; color: white;">
+    <thead class="table ">
         <tr>
             <th style="text-align: center;">Solicitud</th>
             <th style="text-align: center;">Bandas</th>
@@ -33,13 +33,8 @@
         <td>Dato  1</td>
         <td>Dato  2</td>
         <td>Dato  3</td>
-        <td>Dato  4</td>
-    </tr>
-    <tr>
-        <td>Dato  1</td>
-        <td>Dato  2</td>
-        <td>Dato  3</td>
-        <td>Dato  4</td>
+        <td>
+            <button><i class = "fa-solid fa-trash"></i></button> <button><i class = "fa-solid fa-pen"> </td> </button>
     </tr>
     <!-- Puedes agregar más filas según sea necesario -->
     </tbody>

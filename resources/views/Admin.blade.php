@@ -8,7 +8,7 @@
     <h1 class="title-img"></h1>
 </header>
 
-<body style="background-color: hsl(0, 0%, 90%);">
+<body>
     <div class="contenedor-principal" style="background-color: #ffffff; width: 100%; max-width: 1200px; margin: 0 auto; padding: 50px; margin-top: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 100px; ">
     <div class="icon-button-container" style="margin-top: 20px; margin-bottom: 50px; display: flex; justify-content: center; align-items: center; gap: 150px; padding: 10px; box-sizing: border-box;">
             <span style="font-weight: bold; font-size: 24px;">

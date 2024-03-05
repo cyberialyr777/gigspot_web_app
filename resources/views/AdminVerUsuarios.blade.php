@@ -8,7 +8,7 @@
     <h1 class="title-img"></h1>
 </header>
 
-<body style="background-color: hsl(0, 0%, 90%);"">
+<body>
     <div class="contenedor-principal" style="background-color: #ffffffff; width: 100%; max-width: 1200px; margin: 0 auto; padding: 80px; margin-top: 40px; border-radius: 100px;">
         <div class="icon-button-container" style="margin-top: 0px; margin-bottom: 30px; display: flex; justify-content: flex-start; align-items: flex-start; gap: 150px; padding: 10px; box-sizing: border-box;">
             <span style="font-weight: bold; font-size: 24px;">
@@ -30,12 +30,14 @@
     <tr>
         <td>Dato  1</td>
         <td>Dato  2</td>
-        <td>Dato  3</td>
+        <td>
+            <button><i class = "fa-solid fa-trash"></i></button> <button><i class = "fa-solid fa-pen"> </td> </button>
     </tr>
     <tr>
         <td>Dato  1</td>
         <td>Dato  2</td>
-        <td>Dato  3</td>
+        <td>
+            <button><i class = "fa-solid fa-trash"></i></button> <button><i class = "fa-solid fa-pen"> </td> </button>
     </tr>
     <!-- Puedes agregar más filas según sea necesario -->
     </tbody>
