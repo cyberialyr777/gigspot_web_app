@@ -32,13 +32,15 @@
         <td>Dato  1</td>
         <td>Dato  2</td>
         <td>Dato  3</td>
-        <td>Dato  4</td>
+        <td>
+            <button><i class = "fa-solid fa-trash"></i></button> <button><i class = "fa-solid fa-pen"> </td> </button>
     </tr>
     <tr>
         <td>Dato  1</td>
         <td>Dato  2</td>
         <td>Dato  3</td>
-        <td>Dato  4</td>
+        <td>
+            <button><i class = "fa-solid fa-trash"></i></button> <button><i class = "fa-solid fa-pen"> </td> </button>
     </tr>
     <!-- Puedes agregar más filas según sea necesario -->
     </tbody>

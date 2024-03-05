@@ -28,6 +28,8 @@
                     <p class="mb-4 text-with-background">Texto 1</p>
                     <p class="mb-4 text-with-background">Texto 2</p>
                     <p class="mb-4 text-with-background">Texto 3</p>
+                    <p class="mb-4 text-with-background">Texto 3</p>
+                    <button class="btn">Edit</button>
                 </div>
             </div>
         </div>
