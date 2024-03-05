@@ -1,9 +1,16 @@
-@extends ('AdminGeneral')
+@extends ('plantilla_navbar')
 
 @section ('contenido')
-<body style="background-color: #6962b9;">
-<div class="contenedor-principal" style="background-color: #ffffffff; width: 100%; max-width: 1200px; margin: 0 auto; padding: 80px; margin-top: 145px;">
-    <div class="icon-button-container" style="margin-top: 0px; margin-bottom: 30px; display: flex; justify-content: flex-start; align-items: flex-start; gap: 150px; padding: 10px; box-sizing: border-box;">
+
+<header>
+    <div class="container-fluid slide">
+    </div>
+    <h1 class="title-img"></h1>
+</header>
+
+<body style="background-color: hsl(0, 0%, 90%);"">
+    <div class="contenedor-principal" style="background-color: #ffffffff; width: 100%; max-width: 1200px; margin: 0 auto; padding: 80px; margin-top: 40px; border-radius: 100px;">
+        <div class="icon-button-container" style="margin-top: 0px; margin-bottom: 30px; display: flex; justify-content: flex-start; align-items: flex-start; gap: 150px; padding: 10px; box-sizing: border-box;">
             <span style="font-weight: bold; font-size: 24px;">
                 <i class="fa-solid fa-user fa-4x" style="color: #3B3486;"></i> Administrador
             </span>
@@ -34,4 +41,7 @@
     </tbody>
 </table>
 </div>
+</div>
+<br>
+<br>
 @endsection

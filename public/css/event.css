@@ -9,11 +9,12 @@
 }
 
 .container-fluid.slide {
-    min-height: 280px;
+    min-height: 350px;
     background-size: cover;
     position: relative;
     background-image: url('/img/banner1.png');
 }
+
 
 .title-img{
     position: absolute;
@@ -92,7 +93,7 @@
     color: rgb(104, 104, 104);
     font-size: 15px;
     margin-bottom: 3%;
-   
+
 }
 .dia-num{
     color: #6962b9;

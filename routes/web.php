@@ -29,8 +29,18 @@ Route::get("/seats", [SeatsController::class , "seats"]);
 
 Route::controller(LoginController::class)->group(function(){
     Route::get("/loginView", "loginView")->name("loginView");
+
+
+Route::controller(AdminController::class)->group(function(){
+    Route::get("/admin", "index")->name("index");
+    Route::get("/verBandas", "index2")->name("index2");
+    Route::get("/verUsers", "index3") -> name ("index3");
+    Route::get("/adminSol", "index4") -> name ("index4");
+});
+
     Route::get("/registerUserView", "registerUserView");
     Route::get("/registerBandView", "registerBandView");
     Route::get("/registerSclectionView", "registerSclectionView");
     Route::get("/infoConcert", "infoConcert");
 });
+

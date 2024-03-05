@@ -7,18 +7,18 @@ use Illuminate\Http\Request;
 class AdminController extends Controller
 {
     function index(){
-        return view ('Admin');
+        return view ('admin',  ["titulo" => "Administrador"]);
     }
 
     function index2(){
-        return view ('AdminVerBandas');
+        return view ('adminVerBandas', ["titulo" => "Bandas"]);
     }
 
     function index3 (){
-        return view ('AdminVerUsuarios');
+        return view ('adminVerUsuarios',  ["titulo" => "Usuarios"]);
     }
 
     function index4 (){
-        return view ('AdminSolicitudes');
+        return view ('adminSolicitudes', ["titulo" => "Solicitudes"]);
     }
 }
