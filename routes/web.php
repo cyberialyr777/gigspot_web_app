@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\EventsController;
@@ -23,6 +24,13 @@ Route::get("/index", [HomeController::class , "index"]);
 Route::get("/events", [EventsController::class , "eventos"]);
 
 Route::get("/seats", [SeatsController::class , "seats"]);
+
+Route::controller(AdminController::class)->group(function(){
+    Route::get("/admin", "index")->name("index");
+    Route::get("/verBandas", "index2")->name("index2");
+    Route::get("/verUsers", "index3") -> name ("index3");
+    Route::get("/adminSol", "index4") -> name ("index4");
+});
 
 Route::controller(LoginController::class)->group(function(){
     Route::get("/loginView", "loginView")->name("loginView");
