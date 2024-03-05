@@ -35,9 +35,10 @@ Route::controller(LoginController::class)->group(function(){
 });
 
 Route::controller(ProfileController::class)->group(function(){
-    Route::get("/profile", "profileU")->name("profile");
+    Route::get("/profiles", "profileU")->name("profile");
     Route::get("/plantilla", "navbar")->name("navbar");
     Route::get("/profileBand", "profileBand");
+    Route::get("/infoConcerts", "infoConcerts");
 });
 
 
