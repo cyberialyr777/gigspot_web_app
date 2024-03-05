@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class ProfileController extends Controller
 {
     function profileU(){
-        return view("profile");
+        return view("profile", ["titulo" => "User profile"]);
     }
 
     function profileBand(){

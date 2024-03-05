@@ -7,15 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/event.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/seats.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/profile.css') }}">
-    <title>Events</title>
+    <title>{{$titulo}}</title>
 
 </head>
 
 <body>
+    
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand fw-bold" href="#">GigSpot</a>
@@ -41,12 +42,12 @@
                 </ul>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item sign-in">
-                        <a class="nav-link sign-in" href="/loginView">Sign in
+                        <a class="nav-link sign-in" href="#">Sign in
                         </a>
 
                     </li>
                     <li class="nav-item sign-up">
-                        <a type="button" href="/registerSclectionView" class="btn sign-up">Sign up</a>
+                        <a type="button" class="btn sign-up">Sign up</a>
                         </a>
                     </li>
                 </ul>
@@ -54,9 +55,7 @@
             </div>
         </div>
     </nav>
-
     @yield('contenido')
-
 </body>
 
 <footer class="text-center text-lg-start bg-body-tertiary text-muted">
@@ -185,5 +184,3 @@
 </script>
 
 </html>
-
-

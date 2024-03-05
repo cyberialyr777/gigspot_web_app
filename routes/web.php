@@ -22,8 +22,6 @@ Route::get("/index", [HomeController::class , "index"]);
 
 Route::get("/events", [EventsController::class , "eventos"]);
 
-Route::get("/profile", [ProfileController::class , "profile"]);
-
 Route::get("/seats", [SeatsController::class , "seats"]);
 
 Route::controller(LoginController::class)->group(function(){
@@ -35,7 +33,7 @@ Route::controller(LoginController::class)->group(function(){
 });
 
 Route::controller(ProfileController::class)->group(function(){
-    Route::get("/profiles", "profileU")->name("profile");
+    Route::get("/profiles", "profileU");
     Route::get("/plantilla", "navbar")->name("navbar");
     Route::get("/profileBand", "profileBand");
     Route::get("/infoConcerts", "infoConcerts");
