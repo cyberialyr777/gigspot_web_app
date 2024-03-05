@@ -31,6 +31,9 @@ class LoginController extends Controller
     }
 
     function navbar(){
-        return view("info_concert");
+        return view("info_band");
+    }
+    function searchbar(){
+        return view("search_bar");
     }
 }

@@ -24,6 +24,8 @@ Route::get("/index", [HomeController::class , "index"]);
 Route::get("/events", [EventsController::class , "eventos"]);
 
 Route::get("/seats", [SeatsController::class , "seats"]);
+Route::get("/addEventForm", [SeatsController::class, "addEventForm"]);
+Route::get("/updateEventForm", [SeatsController::class , "updateEventForm"]);
 
 Route::controller(AdminController::class)->group(function(){
     Route::get("/admin", "index")->name("index");
@@ -46,6 +48,9 @@ Route::controller(ProfileController::class)->group(function(){
     Route::get("/profileBand", "profileBand");
     Route::get("/infoConcerts", "infoConcerts");
     Route::get("/info_band", "infoBand");
+    Route::get("/searchBar", "searchBar");
+    Route::get("/userUpdate", "userUpdate");
+    Route::get("/bandUpadte", "bandUpadte");
 });
 
 

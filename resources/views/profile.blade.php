@@ -22,13 +22,13 @@
 
 </div>
 <div class="container formulario">
-            <form class="row">
-                <div class="col-sm-6">
+    <form class="row">
+        <div class="col-sm-6">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Nombre</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                      </div>
-                      <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Contraseña</label>
                         <input type="text" class="form-control" id="exampleInputPassword1">
                       </div>
@@ -43,7 +43,7 @@
                         <input type="password" class="form-control" id="exampleInputPassword1">
                       </div>
                 </div>
-                <button type="submit" class="btn btn-primary botonnn">Submit</button>
+                <button type="submit" class="btn botonnn">Submit</button>
               </form>
         </div>
     </div>

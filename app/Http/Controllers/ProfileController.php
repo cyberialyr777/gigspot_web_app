@@ -21,4 +21,16 @@ class ProfileController extends Controller
     function infoBand(){
         return view("info_band", ["titulo" => "infoConcert"]);
     }
+
+    function searchBar(){
+        return view("search_bar", ["titulo" => "Ass event"]);
+    }
+
+    function userUpdate(){
+        return view("userEdit", ["titulo" => "User update"]);
+    }
+    
+    function bandUpadte(){
+        return view("bandEdit",  ["titulo" => "Band update"]);
+    }
 }
