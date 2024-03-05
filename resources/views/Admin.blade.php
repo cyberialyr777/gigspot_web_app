@@ -5,14 +5,14 @@
 <header>
     <div class="container-fluid slide">
     </div>
-    <h1 class="title-img"></h1>
+    <h1 class="title-img">Administrador</h1>
 </header>
 
 <body>
     <div class="contenedor-principal" style="background-color: #ffffff; width: 100%; max-width: 1200px; margin: 0 auto; padding: 50px; margin-top: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 100px; ">
     <div class="icon-button-container" style="margin-top: 20px; margin-bottom: 50px; display: flex; justify-content: center; align-items: center; gap: 150px; padding: 10px; box-sizing: border-box;">
             <span style="font-weight: bold; font-size: 24px;">
-                <i class="fa-solid fa-user fa-4x" style="color: #3B3486;"></i>  Administrador
+                <i class="fa-solid fa-user fa-4x" style="color: #3B3486;"></i>
             </span>
             <button class="btn btn-primary" style="background-color: #3B3486; border-color: #3B3486;">Solicitudes Pendientes</button>
         </div>
