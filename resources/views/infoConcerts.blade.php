@@ -1,7 +1,12 @@
 @extends('plantilla_navbar')
 
 @section('contenido')
-    
+<header>
+  <div class="container-fluid slide">
+
+  </div>
+  <h1 class="title-img">Event</h1>
+</header>
 
 <div class="container mt-4 jutify" style="width: 80%;">
     <div class="d-flex justify-content-evenly">

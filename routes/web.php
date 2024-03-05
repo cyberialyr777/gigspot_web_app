@@ -37,6 +37,7 @@ Route::controller(ProfileController::class)->group(function(){
     Route::get("/plantilla", "navbar")->name("navbar");
     Route::get("/profileBand", "profileBand");
     Route::get("/infoConcerts", "infoConcerts");
+    Route::get("/info_band", "infoBand");
 });
 
 

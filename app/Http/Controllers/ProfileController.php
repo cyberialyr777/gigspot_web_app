@@ -17,4 +17,8 @@ class ProfileController extends Controller
     function infoConcerts(){
         return view("info_concert", ["titulo" => "infoConcert"]);
     }
+
+    function infoBand(){
+        return view("info_band", ["titulo" => "infoConcert"]);
+    }
 }

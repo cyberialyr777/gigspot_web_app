@@ -5,18 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/event.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/seats.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/profile.css') }}">
     <title>{{$titulo}}</title>
 
+    <style>
+        body {
+            transition: background-color 0.5s;
+        }
+        .night-mode {
+          background-color: #1a1a1a; /* Dark background color for night mode */
+          color: #ffffff; /* Light text color for night mode */
+        }
+    </style>
 </head>
 
 <body>
-    
-
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand fw-bold" href="#">GigSpot</a>
@@ -48,14 +55,25 @@
                     </li>
                     <li class="nav-item sign-up">
                         <a type="button" class="btn sign-up">Sign up</a>
-                        </a>
+                        <button id="nightModeBtn" class="btn btn-primary">Toggle Mode</button>
                     </li>
                 </ul>
 
             </div>
         </div>
     </nav>
+    
     @yield('contenido')
+
+    <script>
+        $(document).ready(function(){
+          // Night mode button click event
+          $('#nightModeBtn').click(function(){
+            // Toggle night mode
+            $('body').toggleClass('night-mode');
+          });
+        });
+    </script>
 </body>
 
 <footer class="text-center text-lg-start bg-body-tertiary text-muted">
@@ -179,8 +197,9 @@
     <!-- Copyright -->
 </footer>
 
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
 </script>
-
 </html>
