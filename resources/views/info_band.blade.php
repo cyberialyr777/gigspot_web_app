@@ -34,12 +34,12 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci odit expedita praesentium hic sunt molestiae accusamus, quaerat quidem libero, voluptas culpa provident. Recusandae quaerat reiciendis officia alias tempore ex nemo.</p>
         </div>
         <div class="col-md-6 center-content social-icons">
-            <img src="{{asset('img/facebook.png')}}" alt="Profile Image" style="width: 8%; margin-right:3;"> 
-            <img src="{{asset('img/instagram.png')}}" alt="Profile Image" style="width: 8%; margin-right:3;">
-            <img src="{{asset('img/gorjeo.png')}}" alt="Profile Image" style="width: 8%; margin-right:3;">
-            <img src="{{asset('img/youtube.png')}}" alt="Profile Image" style="width: 8%; margin-right:3;">
-            <img src="{{asset('img/spotify.png')}}" alt="Profile Image" style="width: 8%; margin-right:3;">
-            <img src="{{asset('img/whatsapp.png')}}" alt="Profile Image" style="width: 8%; margin-right:3;">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-spotify"></i>
+            <i class="fa-brands fa-whatsapp"></i>
         </div>
     </div>
 </div>
@@ -48,6 +48,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="https://kit.fontawesome.com/4a9c34eacf.js" crossorigin="anonymous"></script>
+
 
 </body>
 

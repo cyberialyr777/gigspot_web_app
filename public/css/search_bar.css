@@ -1,0 +1,22 @@
+body{
+    padding: 100px 
+    }
+
+.btn-add{
+        border-radius: 15px;
+        border: none;
+        background-color: purple;
+        color: #ffffff;
+        width: 250px; 
+        padding: 10px; 
+        text-align: center; 
+        display: inline-block; 
+        cursor: pointer;
+    }
+
+.form-control-icon {
+    text-align: center;
+    padding-left: 6% !important;
+    border-color: purple !important
+    }
+
