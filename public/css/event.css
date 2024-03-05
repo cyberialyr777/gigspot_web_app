@@ -39,6 +39,7 @@
 
 .container.buscador{
     background-color: #6962b9 !important;
+    border-radius: 7px;
 }
 
 .form-group.col-sm-4{
@@ -78,6 +79,7 @@
     border: 2px solid #6962b9 !important;
     margin-top: 1%;
     padding: 15px;
+    border-radius: 7px;
 }
 
 .title-filter{
