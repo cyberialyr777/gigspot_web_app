@@ -1,0 +1,25 @@
+body {
+    background-color: #000 !important;
+    color: #fff !important;
+    margin: 0;
+    padding: 0;
+}
+
+.center-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.social-icons i {
+    font-size: 2em;
+    margin: 0 10px;
+}
+.band-name {
+    position: absolute;
+    top: 50%; /* Coloca el elemento a la mitad del contenedor padre */
+    left: 50%; /* Coloca el elemento a la mitad del contenedor padre */
+    transform: translate(-50%, -50%); /* Centra el elemento completamente */
+    font-size: 2em; /* Ajusta el tamaño del texto según tu preferencia */
+}

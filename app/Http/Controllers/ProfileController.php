@@ -9,4 +9,8 @@ class ProfileController extends Controller
     function profile(){
         return view("profile");
     }
+
+    function profileBand(){
+        return view("profile_band", ["titulo" => "Band profile"]);
+    }
 }

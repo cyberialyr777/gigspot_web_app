@@ -33,3 +33,12 @@ Route::controller(LoginController::class)->group(function(){
     Route::get("/registerSclectionView", "registerSclectionView");
     Route::get("/infoConcert", "infoConcert");
 });
+
+Route::controller(ProfileController::class)->group(function(){
+    Route::get("/profile", "profileU")->name("profile");
+    Route::get("/plantilla", "navbar")->name("navbar");
+    Route::get("/profileBand", "profileBand");
+});
+
+
+

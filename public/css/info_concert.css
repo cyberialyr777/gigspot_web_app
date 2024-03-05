@@ -1,0 +1,68 @@
+.contenedor{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 54px;
+padding-left: 20px;
+}
+.columna {
+    display: flex;
+flex-direction: column;
+width: 100%;
+align-items: flex-start;
+gap: 15px;
+}
+
+.actions{
+display: flex;
+width: 100%;
+justify-content: space-between; }
+
+.actions i{
+    padding-right: 200px;
+    padding-left: 0px;
+}
+
+.texto{
+display: flex;
+flex-direction: column;
+}
+
+.details{
+    gap:5px
+}
+.actions button{
+    margin-right: 50px;
+}
+.img{
+    display: flex;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.details{
+    display: flex;
+}
+.buyticket{
+    display: flex;
+    width: 100%;
+    justify-self: flex-end;
+    justify-content: end;
+    padding-right: 20px;
+}
+.tittle{
+    display: flex;
+    justify-content: space-between;
+}
+.reviews{
+    display: flex;
+    flex-direction: column;
+}
+body{
+    padding-top: 120px;
+}
+.icon{
+    display: flex;
+    align-items: center;
+}

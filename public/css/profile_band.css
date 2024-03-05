@@ -1,0 +1,21 @@
+.main-text{
+    font-size: 30px;
+}
+.text-with-background {
+    background-color: #8a2be2; /* Color lila, puedes cambiarlo según tu preferencia */
+    color: #fff; /* Color del texto */
+    padding: 10px; /* Ajusta el relleno según sea necesario */
+    border-radius: 5px; /* Ajusta la esquina redondeada según sea necesario */
+}
+
+.additional-text {
+    margin-top: 5px; /* Agrega un pequeño espacio entre el texto principal y el texto adicional */
+    font-size: 25px; /* Ajusta el tamaño del texto adicional según sea necesario */
+}
+
+.profile-usertitle{
+    font-size: 40px;
+}
+body{
+    padding-top: 120px;
+}

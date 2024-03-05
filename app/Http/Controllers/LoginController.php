@@ -26,4 +26,11 @@ class LoginController extends Controller
     function infoConcert(){
         return view("infoConcerts", ["titulo" => "Info Concert"]);
     }
+    function profileU(){
+        return view("profile_band");
+    }
+
+    function navbar(){
+        return view("info_concert");
+    }
 }
