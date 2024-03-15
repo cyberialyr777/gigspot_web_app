@@ -14,4 +14,8 @@ class Pais extends Model
     protected $fillable = [
         'pais'
     ];
+
+    public function Evento(){
+        return $this->hasOne(Evento::class);
+    }  
 }

@@ -13,10 +13,11 @@ return new class extends Migration
     {
         Schema::create('administradores', function (Blueprint $table) {
             $table->id('id_administrador');
-            $table->string('nombre');
-            $table->string('apellido_paterno');
-            $table->string('apellido_materno');
-            $table->unsignedBigInteger('id_administradores_fk');
+            $table->string('nombre', length: 50);
+            $table->string('apellido_paterno', length: 50);
+            $table->string('apellido_materno', length: 50);
+            $table->unsignedBigInteger("id_usuario_fk");
+            $table->foreign("id_usuario_fk")->references("id_usuario")->on("usuarios");
             $table->timestamps();
         });
     }

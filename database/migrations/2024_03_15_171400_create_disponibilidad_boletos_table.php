@@ -15,7 +15,8 @@ return new class extends Migration
             $table->id("id_disponibilidad_boletos");
             $table->integer("cantidad_disponible");
             $table->dateTime("fecha_disponibilidad");
-            $table->unsignedBigInteger("id_zonas_fk");
+            $table->unsignedBigInteger("id_zona_fk");
+            $table->foreign("id_zona_fk")->references("id_zona")->on("zonas");
             $table->timestamps();
         });
     }
