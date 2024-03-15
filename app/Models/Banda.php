@@ -10,6 +10,9 @@ class Banda extends Model
     use HasFactory;
     protected $fillable = [
         'nombre',
-        'descripcion'
+        'descripcion',
+        'id_bandas_fk'
     ];
+
+    protected $primaryKey = 'id_bandas';
 }
