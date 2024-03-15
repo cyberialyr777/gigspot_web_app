@@ -12,4 +12,6 @@ class Zona extends Model
     protected $fillable = [
         "zona"
     ];
+
+    protected $primaryKey = "id_zona";
 }

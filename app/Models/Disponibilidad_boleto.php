@@ -13,4 +13,6 @@ class Disponibilidad_boleto extends Model
         "cantidad_disponible",
         "fecha_disponibilidad",
     ];
+
+    protected $primaryKey = "id_disponibilidad_boletos";
 }

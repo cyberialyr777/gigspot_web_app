@@ -12,4 +12,6 @@ class Lugar extends Model
     protected $fillable = [
         "lugar"
     ];
+
+    protected $primaryKey = "id_lugar";
 }

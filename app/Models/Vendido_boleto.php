@@ -11,4 +11,6 @@ class Vendido_boleto extends Model
 
     protected $fillable = [
     ];
+
+    protected $primaryKey = "id_vendido_boleto";
 }
