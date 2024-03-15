@@ -28,12 +28,17 @@
                     <p class="mb-4 text-with-background">Texto 1</p>
                     <p class="mb-4 text-with-background">Texto 2</p>
                     <p class="mb-4 text-with-background">Texto 3</p>
+                    <p class="mb-4 text-with-background">Texto 3</p>
+                    <button class="btn">Edit</button>
                 </div>
             </div>
         </div>
     </div>
 </main>
 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
 

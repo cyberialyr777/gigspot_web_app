@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
+    <title>{{$titulo}}</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/home.css') }}">
   </head>
@@ -24,7 +24,7 @@
           </div>
           <button type="button" class="btn btn-carrusel">Buy tickets</button>
         </div>
-        
+
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -54,25 +54,25 @@
                 <a class="nav-link" href="#">Events
                 </a>
               </li>
-              
+
             </ul>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item sign-in">
               <a class="nav-link sign-in" href="#">Sign in
               </a>
-                  
+
             </li>
             <li class="nav-item sign-up">
               <a type="button" class="btn sign-up">Sign up</a>
               </a>
             </li>
           </ul>
-            
+
           </div>
         </div>
       </nav>
 
-      
+
 
       <div class="text-recent-concerts">
         <h1>Latest Concerts</h1>
@@ -117,8 +117,9 @@
         </div>
 
       </div>
-      
     
+
+
   </body>
 
   <!-- Footer -->
@@ -130,7 +131,7 @@
         <span>Get connected with us on social networks:</span>
       </div>
       <!-- Left -->
-  
+
       <!-- Right -->
       <div>
         <a href="" class="me-4 text-reset">
@@ -155,7 +156,7 @@
       <!-- Right -->
     </section>
     <!-- Section: Social media -->
-  
+
     <!-- Section: Links  -->
     <section class="container foter">
       <div class="container text-center text-md-start mt-5">
@@ -173,7 +174,7 @@
             </p>
           </div>
           <!-- Grid column -->
-  
+
           <!-- Grid column -->
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
@@ -194,7 +195,7 @@
             </p>
           </div>
           <!-- Grid column -->
-  
+
           <!-- Grid column -->
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
@@ -215,7 +216,7 @@
             </p>
           </div>
           <!-- Grid column -->
-  
+
           <!-- Grid column -->
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <!-- Links -->
@@ -234,7 +235,7 @@
       </div>
     </section>
     <!-- Section: Links  -->
-  
+
     <!-- Copyright -->
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
       © 2024 Copyright:

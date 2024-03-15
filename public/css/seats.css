@@ -1,0 +1,77 @@
+.navbar{
+    color:floralwhite !important;
+    background-color: transparent !important; /* Ensures transparency */
+    border-color: transparent !important;
+}
+
+.div.container-fluid{
+    color:floralwhite !important;
+}
+
+.container-fluid.slide {
+    min-height: 280px;
+    background-size: cover;
+    position: relative;
+    background-image: url('/img/banner1.png');
+}
+
+.title-img{
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:floralwhite;
+}
+
+.nav-link{
+    color:floralwhite !important;
+}
+
+.navbar-brand{
+    color: #6962b9  !important;
+}
+
+.btn {
+    background-color: #6962b9 !important;
+    color:floralwhite;
+}
+
+.container-xxl.buscador{
+    background-color: #6962b9 !important;
+    color: floralwhite;
+    height: 10%;
+}
+
+.container-xxl.buscador{
+    width: 60%;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container.tickets{
+    margin-top: 4%;
+}
+
+.container.borrder{
+    border: 2px solid #6962b9;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 7px;
+}
+
+.marrgin{
+    margin-top: 4%;
+    padding-bottom: 4%;
+}
+
+.texto{
+    color: rgb(104, 104, 104);
+}
+
+.arriba{
+    margin-bottom: 2%;
+}
+
+

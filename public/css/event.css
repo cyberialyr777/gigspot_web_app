@@ -1,0 +1,125 @@
+.navbar{
+    color:floralwhite !important;
+    background-color: transparent !important; /* Ensures transparency */
+    border-color: transparent !important;
+}
+
+.div.container-fluid{
+    color:floralwhite !important;
+}
+
+.container-fluid.slide {
+    min-height: 350px;
+    background-size: cover;
+    position: relative;
+    background-image: url('/img/banner1.png');
+}
+
+
+.title-img{
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:floralwhite;
+}
+
+.nav-link{
+    color:floralwhite !important;
+}
+
+.navbar-brand{
+    color: #6962b9  !important;
+}
+
+
+.btn {
+    background-color: #6962b9 !important;
+    color:floralwhite;
+}
+
+.container.buscador{
+    background-color: #6962b9 !important;
+    border-radius: 7px;
+}
+
+.form-group.col-sm-4{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 3%;
+}
+
+.btn.btn-primary.find-tickets{
+    border-color: floralwhite !important;
+}
+
+.col-sm-3.boton{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.form-group.col-sm-4.artista{
+    margin-left: 7%;
+}
+
+.container.buscador{
+    width: 60%;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* contenedor de eventos y los filtros */
+.container.objetos{
+    margin-top: 7%;
+}
+
+/* contenedor de eventos */
+.container.eventos{
+    border: 2px solid #6962b9 !important;
+    margin-top: 1%;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+.title-filter{
+    color: #6962b9;
+}
+
+.categoria{
+    margin-top: 10%;
+}
+
+.dia{
+    color: rgb(104, 104, 104);
+    font-size: 15px;
+    margin-bottom: 3%;
+
+}
+.dia-num{
+    color: #6962b9;
+    font-size: 30px;
+    margin-bottom: 3%;
+}
+
+.mes{
+    color: #6962b9;
+}
+
+.venue{
+    color: #686868;
+}
+
+.lugar{
+    color: rgb(104, 104, 104);
+}
+
+.from{
+    margin-top: 7%;
+    color: rgb(104, 104, 104);
+}
+
+.price{
+    margin-top: 6.7%;
+}

@@ -5,18 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a58b9c1af8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/event.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/seats.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/profile.css') }}">
-    <title>Events</title>
+    <title>{{$titulo}}</title>
 
+    <style>
+        body {
+            transition: background-color 0.5s;
+        }
+        .night-mode {
+          background-color: #1a1a1a; /* Dark background color for night mode */
+          color: #ffffff; /* Light text color for night mode */
+        }
+    </style>
 </head>
 
 <body>
-    
-
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand fw-bold" href="#">GigSpot</a>
@@ -42,20 +50,46 @@
                 </ul>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item sign-in">
-                        <a class="nav-link sign-in" href="#">Sign in
+                        <a class="nav-link sign-in" href="/loginView">Sign in
                         </a>
 
                     </li>
                     <li class="nav-item sign-up">
-                        <a type="button" class="btn sign-up">Sign up</a>
-                        </a>
+                        <a type="button" class="btn sign-up" href="/registerSclectionView">Sign up</a>
+                        <button id="nightModeBtn" class="btn"><i class="bi bi-moon-stars"></i></button>
                     </li>
                 </ul>
 
             </div>
         </div>
     </nav>
+
     @yield('contenido')
+
+    <script>
+        // Check if night mode is stored in localStorage
+        const nightMode = localStorage.getItem('nightMode');
+      
+        // Apply night mode if it's stored
+        if (nightMode === 'enabled') {
+          $('body').addClass('night-mode');
+        }
+      
+        $(document).ready(function(){
+          // Night mode button click event
+          $('#nightModeBtn').click(function(){
+            // Toggle night mode
+            $('body').toggleClass('night-mode');
+      
+            // Store night mode preference in localStorage
+            const isNightMode = $('body').hasClass('night-mode') ? 'enabled' : 'disabled';
+            localStorage.setItem('nightMode', isNightMode);
+          });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 <footer class="text-center text-lg-start bg-body-tertiary text-muted">
@@ -179,8 +213,9 @@
     <!-- Copyright -->
 </footer>
 
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
 </script>
-
 </html>
