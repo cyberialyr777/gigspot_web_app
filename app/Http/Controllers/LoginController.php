@@ -20,4 +20,7 @@ class LoginController extends Controller
     function searchbar(){
         return view("search_bar");
     }
+    function add_event(){
+        return view("add_event_form");
+    }
 }

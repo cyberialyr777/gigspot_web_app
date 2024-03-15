@@ -22,4 +22,5 @@ Route::controller(LoginController::class)->group(function(){
     Route::get("/profile", "profileU")->name("profile");
     Route::get("/plantilla", "navbar")->name("navbar");
     Route::get("/search", "searchbar")->name("searchbar");
+    Route::get("/add", "add_event")->name("addevent");
 });
