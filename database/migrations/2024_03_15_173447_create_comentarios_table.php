@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('comentarios', function (Blueprint $table) {
             $table->id('id_comentarios');
             $table->string('comentario');
-            $table->string('evento');
+            $table->int('calificacion');
             $table->timestamps();
             $table->unsignedBigInteger('id_comentarios_fk');
         });
