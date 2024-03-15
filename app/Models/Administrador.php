@@ -12,6 +12,9 @@ class Administrador extends Model
     protected $fillable = [
         'nombre',
         'apellido_paterno',
-        'apellido_materno'
+        'apellido_materno',
+        'id_administradores_fk'
     ];
+
+    protected $primaryKey = 'id_administradores';
 }

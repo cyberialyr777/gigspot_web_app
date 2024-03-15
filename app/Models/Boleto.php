@@ -10,6 +10,9 @@ class Boleto extends Model
     use HasFactory;
     use HasFactory;
     protected $fillable = [
-        'precio'
+        'precio',
+        'id_boletos_fk'
     ];
+
+    protected $primaryKey = 'id_boletos';
 }
