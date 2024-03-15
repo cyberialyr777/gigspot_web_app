@@ -1,0 +1,15 @@
+body{
+    padding: 100px;
+}
+
+.btnAdd{
+    border-radius: 15px;
+        border: none;
+        background-color: #3B3486;
+        color: #ffffff;
+        width: 250px; 
+        padding: 10px; 
+        text-align: center; 
+        display: inline-block; 
+        cursor: pointer;
+}
