@@ -11,10 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('generos', function (Blueprint $table) {
-            $table->id('id_genero');
-            $table->string('genero', length:50);
+        Schema::create('ticket_avaliables', function (Blueprint $table) {
+            $table->id();
+            $table->integer("cantidad_disponible");
+            $table->dateTime("fecha_disponibilidad");
+            $table->unsignedBigInteger("zone_id");
             $table->timestamps();
+
+            // $table->foreign("id_zona_fk")->references("id_zona")->on("zonas");
         });
     }
 
@@ -23,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('generos');
+        Schema::dropIfExists('ticket_avaliables');
     }
 };

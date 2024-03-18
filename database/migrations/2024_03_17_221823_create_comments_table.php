@@ -11,15 +11,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('comentarios', function (Blueprint $table) {
-            $table->id('id_comentario');
+        Schema::create('comments', function (Blueprint $table) {
+            $table->id();
             $table->string('comentario', length:500);
             $table->integer('calificacion');
             $table->timestamps();
-            $table->unsignedBigInteger('id_cliente_fk');
-            $table->foreign("id_cliente_fk")->references("id_cliente")->on("clientes");
-            $table->unsignedBigInteger('id_evento_fk');
-            $table->foreign("id_cliente_fk")->references("id_events")->on("events");
+            $table->unsignedBigInteger('client_id');
+            $table->unsignedBigInteger('event_id');
+
+            // $table->foreign("id_cliente_fk")->references("id_cliente")->on("clientes");
+            // $table->foreign("id_cliente_fk")->references("id_events")->on("events");
         });
     }
 
@@ -28,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('comentarios');
+        Schema::dropIfExists('comments');
     }
 };

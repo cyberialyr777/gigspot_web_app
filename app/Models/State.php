@@ -5,13 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Zona extends Model
+class State extends Model
 {
     use HasFactory;
-
-    protected $fillable = [
-        "zona"
-    ];
-
-    protected $primaryKey = "id_zona";
 }

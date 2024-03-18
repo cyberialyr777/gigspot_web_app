@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Administrador extends Model
+class Admin extends Model
 {
     use HasFactory;
 
@@ -13,8 +13,6 @@ class Administrador extends Model
         'nombre',
         'apellido_paterno',
         'apellido_materno',
-        'id_administradores_fk'
+        'id_usuario_fk',
     ];
-
-    protected $primaryKey = 'id_administradores';
 }
