@@ -15,24 +15,23 @@ return new class extends Migration
             $table->id();
             $table->date('fecha');
             $table->time('hora');
-            $table->unsignedBigInteger("zone_id");
-            $table->unsignedBigInteger("genre_id");
-            $table->unsignedBigInteger("band_id");
-            $table->unsignedBigInteger("country_id");
-            $table->unsignedBigInteger("state_id");
-            $table->unsignedBigInteger("municip_id");
-            $table->unsignedBigInteger("place_id");
-            $table->unsignedBigInteger("comment_id");
+            $table->unsignedBigInteger("zones_id");
+            $table->unsignedBigInteger("genres_id");
+            $table->unsignedBigInteger("bands_id");
+            $table->unsignedBigInteger("countrys_id");
+            $table->unsignedBigInteger("states_id");
+            $table->unsignedBigInteger("municips_id");
+            $table->unsignedBigInteger("places_id");
+            $table->unsignedBigInteger("comments_id");
             $table->timestamps();
 
-            // $table->foreign("id_zona_fk")->references("id_zona")->on("zonas");
-            // $table->foreign("id_genero_fk")->references("id_genero")->on("generos");
-            // $table->foreign("id_banda_fk")->references("id_banda")->on("bandas");
-            // $table->foreign("id_pais_fk")->references("id_pais")->on("paises");
-            // $table->foreign("id_esatdo_fk")->references("id_estado")->on("estados");
-            // $table->foreign("id_municipio_fk")->references("id_municipio")->on("municipios");
-            // $table->foreign("id_lugar_fk")->references("id_lugar")->on("lugares");
-            // $table->foreign("id_comentario_fk")->references("id_comentario")->on("comentarios");
+            // $table->foreign("zones_id")->references("id")->on("zones");
+            // $table->foreign("genres_id")->references("id")->on("genres");
+            // $table->foreign("bands_id")->references("id")->on("bands");
+            // $table->foreign("countrys_id")->references("id")->on("countrys");
+            // $table->foreign("states_id")->references("id")->on("states");
+            // $table->foreign("municips_id")->references("id")->on("municips");
+            // $table->foreign("places_id")->references("id")->on("places");
         });
     }
 

@@ -16,10 +16,10 @@ return new class extends Migration
             $table->string('nombre', length: 50);
             $table->string('apellido_paterno', length: 50);
             $table->string('apellido_materno', length: 50);
-            $table->unsignedBigInteger("user_id");
+            $table->unsignedBigInteger("users_id");
             $table->timestamps();
 
-            // $table->foreign("id_usuario_fk")->references("id_usuario")->on("usuarios");
+            // $table->foreign("users_id")->references("id")->on("users");
 
         });
     }

@@ -15,10 +15,8 @@ return new class extends Migration
             $table->id();
             $table->integer("cantidad_disponible");
             $table->dateTime("fecha_disponibilidad");
-            $table->unsignedBigInteger("zone_id");
             $table->timestamps();
 
-            // $table->foreign("id_zona_fk")->references("id_zona")->on("zonas");
         });
     }
 

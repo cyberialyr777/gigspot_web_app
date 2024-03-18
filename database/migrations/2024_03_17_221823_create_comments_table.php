@@ -16,11 +16,11 @@ return new class extends Migration
             $table->string('comentario', length:500);
             $table->integer('calificacion');
             $table->timestamps();
-            $table->unsignedBigInteger('client_id');
-            $table->unsignedBigInteger('event_id');
+            $table->unsignedBigInteger('clients_id');
+            $table->unsignedBigInteger('events_id');
 
-            // $table->foreign("id_cliente_fk")->references("id_cliente")->on("clientes");
-            // $table->foreign("id_cliente_fk")->references("id_events")->on("events");
+            // $table->foreign("clients_id")->references("id")->on("clients");
+            // $table->foreign("events_id")->references("id")->on("events");
         });
     }
 

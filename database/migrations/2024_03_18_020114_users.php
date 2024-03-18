@@ -11,12 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('sold_tickets', function (Blueprint $table) {
-            $table->id();
-            $table->unsignedBigInteger("tickets_id");
-            $table->timestamps();
+        Schema::table('users', function (Blueprint $table) {
+            $table->foreign("clients_id")->references("id")->on("clients");
+            $table->foreign("admins_id")->references("id")->on("admins");
+            $table->foreign("bands_id")->references("id")->on("bands");
 
-            // $table->foreign("tickets_id")->references("id")->on("tickets");
         });
     }
 
@@ -25,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('sold_tickets');
+        //
     }
 };

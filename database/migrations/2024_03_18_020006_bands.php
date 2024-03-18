@@ -11,12 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('sold_tickets', function (Blueprint $table) {
-            $table->id();
-            $table->unsignedBigInteger("tickets_id");
-            $table->timestamps();
-
-            // $table->foreign("tickets_id")->references("id")->on("tickets");
+        Schema::table("bands", function(Blueprint $table){
+            $table->foreign("users_id")->references("id")->on("users");
+            $table->foreign("genres_id")->references("id")->on("genres");
         });
     }
 
@@ -25,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('sold_tickets');
+        //
     }
 };

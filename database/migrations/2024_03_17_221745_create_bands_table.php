@@ -15,12 +15,12 @@ return new class extends Migration
             $table->id();
             $table->string('nombre');
             $table->string('descripcion');
-            $table->unsignedBigInteger("user_id");
-            $table->unsignedBigInteger("genre_id");
+            $table->unsignedBigInteger("users_id");
+            $table->unsignedBigInteger("genres_id");
             $table->timestamps();
 
-            // $table->foreign("id_usuario_fk")->references("id_usuario")->on("usuarios");
-            // $table->foreign("id_genero_fk")->references("id_genero")->on("generos");
+            // $table->foreign("users_id")->references("id")->on("users");
+            // $table->foreign("genres_id")->references("id")->on("genres");
         });
     }
 

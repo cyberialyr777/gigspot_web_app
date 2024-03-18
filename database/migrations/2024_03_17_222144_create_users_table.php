@@ -18,12 +18,15 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
-            $table->unsignedBigInteger("client_id");
-            $table->unsignedBigInteger("admin_id");
-            $table->unsignedBigInteger("band_id");
+            $table->unsignedBigInteger("clients_id");
+            $table->unsignedBigInteger("admins_id");
+            $table->unsignedBigInteger("bands_id");
             $table->timestamps();
 
-            // $table->foreign("id_cliente_fk")->references("id_cliente")->on("clientes");
+            // $table->foreign("clients_id")->references("id")->on("clients");
+            // $table->foreign("admins_id")->references("id")->on("admins");
+            // $table->foreign("bands_id")->references("id")->on("bands");
+
         });
     }
 
