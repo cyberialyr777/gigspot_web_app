@@ -22,7 +22,6 @@ return new class extends Migration
             $table->unsignedBigInteger("states_id");
             $table->unsignedBigInteger("municips_id");
             $table->unsignedBigInteger("places_id");
-            $table->unsignedBigInteger("comments_id");
             $table->timestamps();
 
             // $table->foreign("zones_id")->references("id")->on("zones");
