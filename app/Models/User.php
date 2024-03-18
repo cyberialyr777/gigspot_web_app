@@ -11,14 +11,21 @@ class User extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['tipo_usuario', 'email', 'password'];
 
-    public function user(): HasOne
+    public function client():HasOne
+    {
+        return $this->hasOne(Client::class);
+    }
+
+    public function admin(): HasOne
     {
         return $this->hasOne(Admin::class);
     }
 
-    public function admin(): BelongsTo
+    public function band(): HasOne
     {
-        return $this->belongsTo(Admin::class);
+        return $this->hasOne(Band::class);
     }
 }
+
