@@ -32,6 +32,7 @@ Route::controller(AdminController::class)->group(function(){
     Route::get("/verBandas", "index2")->name("index2");
     Route::get("/verUsers", "index3") -> name ("index3");
     Route::get("/adminSol", "index4") -> name ("index4");
+    Route::get("/adminTick", "index5") -> name ("index5");
 });
 
 Route::controller(LoginController::class)->group(function(){

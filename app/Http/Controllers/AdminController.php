@@ -21,4 +21,7 @@ class AdminController extends Controller
     function index4 (){
         return view ('adminSolicitudes', ["titulo" => "Solicitudes"]);
     }
+        function index5 (){
+            return view ('adminTick', ["titulo" => "Tickets"]);
+        }
 }
